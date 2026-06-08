@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AVIORA — Cinematography</title>
+  <title>AVIORA — Cinematic Storytelling</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,11 +11,11 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__logo">AVIORA</div>
-    <ul class="nav__links">
-      <li><a href="#work">Work</a></li>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#packages">Packages</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#reel">Showreel</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav__cta">Book Now</a></li>
     </ul>
     <button class="nav__menu" id="menuBtn" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -25,11 +25,16 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero__grain"></div>
+    <div class="hero__bg" style="background-image:url('images/cover.jpg')"></div>
+    <div class="hero__overlay"></div>
     <div class="hero__content">
-      <p class="hero__eyebrow">Director of Photography</p>
-      <h1 class="hero__title">Light.<br>Shadow.<br>Story.</h1>
-      <p class="hero__sub">Cinematic storytelling through the lens.</p>
-      <a href="#work" class="btn btn--outline">View Work</a>
+      <p class="hero__eyebrow">Cinematic Storytelling</p>
+      <h1 class="hero__title">Your Story.<br>Beautifully<br>Told.</h1>
+      <p class="hero__sub">Wedding & event cinematography that captures every moment the way you'll want to remember it — forever.</p>
+      <div class="hero__actions">
+        <a href="#packages" class="btn btn--primary">View Packages</a>
+        <a href="#services" class="btn btn--outline">Our Work</a>
+      </div>
     </div>
     <div class="hero__scroll">
       <span>Scroll</span>
@@ -37,160 +42,312 @@
     </div>
   </section>
 
-  <!-- WORK GRID -->
-  <section class="work" id="work">
-    <div class="section-header">
-      <span class="section-label">Selected Work</span>
-      <h2>Behind the Frame</h2>
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header reveal">
+      <span class="section-label">What We Do</span>
+      <h2>Every Milestone,<br>Captured in Cinema</h2>
     </div>
-    <div class="work__grid">
-      <article class="work__card work__card--large" data-category="Commercial">
-        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1200&q=80')"></div>
-        <div class="work__card-info">
-          <span class="work__card-cat">Commercial</span>
-          <h3>The Silent Hour</h3>
-          <p>30s brand film — natural light, single take</p>
+
+    <div class="services__grid">
+
+      <article class="service-card reveal">
+        <div class="service-card__img" style="background-image:url('images/preshoots.jpg')"></div>
+        <div class="service-card__body">
+          <span class="section-label">01</span>
+          <h3>Pre Shoots</h3>
+          <p>Relaxed, intimate sessions in locations you love — building your story before the big day begins.</p>
+          <a href="#pre-shoots" class="service-card__link">See Packages →</a>
         </div>
       </article>
-      <article class="work__card" data-category="Short Film">
-        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80')"></div>
-        <div class="work__card-info">
-          <span class="work__card-cat">Short Film</span>
-          <h3>Beneath Ash</h3>
-          <p>Award-winning short, 2024</p>
+
+      <article class="service-card reveal">
+        <div class="service-card__img" style="background-image:url('images/engagement.jpg')"></div>
+        <div class="service-card__body">
+          <span class="section-label">02</span>
+          <h3>Engagement</h3>
+          <p>Cinematic coverage of your engagement celebration — from the intimate moments to the grand gestures.</p>
+          <a href="#engagement" class="service-card__link">See Packages →</a>
         </div>
       </article>
-      <article class="work__card" data-category="Music Video">
-        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80')"></div>
-        <div class="work__card-info">
-          <span class="work__card-cat">Music Video</span>
-          <h3>Neon Veins</h3>
-          <p>High contrast neon, handheld</p>
+
+      <article class="service-card reveal">
+        <div class="service-card__img" style="background-image:url('images/weddings.jpg')"></div>
+        <div class="service-card__body">
+          <span class="section-label">03</span>
+          <h3>Weddings</h3>
+          <p>Full-day cinematic coverage — highlight films, trailers, extended cuts, and everything in between.</p>
+          <a href="#weddings" class="service-card__link">See Packages →</a>
         </div>
       </article>
-      <article class="work__card work__card--wide" data-category="Documentary">
-        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&q=80')"></div>
-        <div class="work__card-info">
-          <span class="work__card-cat">Documentary</span>
-          <h3>Frames of the Forgotten</h3>
-          <p>Feature documentary — 6 countries, 90 days</p>
-        </div>
-      </article>
-      <article class="work__card" data-category="Commercial">
-        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1518929458119-e5bf444c30f4?w=800&q=80')"></div>
-        <div class="work__card-info">
-          <span class="work__card-cat">Commercial</span>
-          <h3>Dusk Protocol</h3>
-          <p>Anamorphic lenses, golden hour</p>
-        </div>
-      </article>
+
     </div>
   </section>
 
-  <!-- SHOWREEL -->
-  <section class="reel" id="reel">
-    <div class="reel__bg"></div>
-    <div class="reel__content">
-      <span class="section-label">2024 Showreel</span>
-      <h2>Two Minutes.<br>Every Frame Counts.</h2>
-      <button class="reel__play" id="reelPlay" aria-label="Play showreel">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5"/>
-          <path d="M24 20L42 30L24 40V20Z" fill="white"/>
-        </svg>
-        <span>Play Reel</span>
-      </button>
+  <!-- PACKAGES -->
+  <section class="packages" id="packages">
+    <div class="section-header reveal">
+      <span class="section-label">Price Guide 2026 / 27</span>
+      <h2>Transparent Pricing.<br>No Surprises.</h2>
     </div>
-    <!-- Lightbox -->
-    <div class="reel__lightbox" id="reelLightbox">
-      <button class="reel__close" id="reelClose" aria-label="Close">✕</button>
-      <iframe
-        id="reelFrame"
-        src=""
-        data-src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-        allow="autoplay; fullscreen"
-        allowfullscreen
-        title="Showreel">
-      </iframe>
+
+    <!-- PRE SHOOTS -->
+    <div class="pkg-category" id="pre-shoots">
+      <div class="pkg-category__header reveal">
+        <div class="pkg-category__img" style="background-image:url('images/preshoots.jpg')"></div>
+        <div class="pkg-category__label">
+          <span class="section-label">Service</span>
+          <h2>Pre Shoots</h2>
+        </div>
+      </div>
+      <div class="pkg-grid">
+        <div class="pkg-card reveal">
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">01</span>
+            <h3>Package 01</h3>
+            <p class="pkg-card__price">45,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>01 Professional Videographer</li>
+            <li>4 Hours Coverage</li>
+            <li>Cinematic Video</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Outputs via Online</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--full">Book This</a>
+        </div>
+        <div class="pkg-card pkg-card--featured reveal">
+          <div class="pkg-card__badge">Popular</div>
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">02</span>
+            <h3>Package 02</h3>
+            <p class="pkg-card__price">65,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>01 Professional Videographer</li>
+            <li>Drone Coverage</li>
+            <li>5 Hours Coverage</li>
+            <li>Cinematic Video</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Outputs via Online</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full">Book This</a>
+        </div>
+        <div class="pkg-card reveal">
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">03</span>
+            <h3>Package 03</h3>
+            <p class="pkg-card__price">60,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>01 Professional Videographer</li>
+            <li>8 Hours Coverage</li>
+            <li>Cinematic Video</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Outputs via Online</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--full">Book This</a>
+        </div>
+      </div>
     </div>
+
+    <!-- ENGAGEMENT -->
+    <div class="pkg-category" id="engagement">
+      <div class="pkg-category__header pkg-category__header--right reveal">
+        <div class="pkg-category__img" style="background-image:url('images/engagement.jpg')"></div>
+        <div class="pkg-category__label">
+          <span class="section-label">Service</span>
+          <h2>Engagement</h2>
+        </div>
+      </div>
+      <div class="pkg-grid">
+        <div class="pkg-card reveal">
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">01</span>
+            <h3>Package 01</h3>
+            <p class="pkg-card__price">50,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>01 Professional Videographer</li>
+            <li>3 Hours Coverage</li>
+            <li>Cinematic Highlight Video</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Outputs via Online</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--full">Book This</a>
+        </div>
+        <div class="pkg-card pkg-card--featured reveal">
+          <div class="pkg-card__badge">Popular</div>
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">02</span>
+            <h3>Package 02</h3>
+            <p class="pkg-card__price">65,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>01 Professional Videographer</li>
+            <li>6 Hours Coverage</li>
+            <li>Cinematic Highlight Video</li>
+            <li>Trailer (~30s)</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Outputs via Online</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full">Book This</a>
+        </div>
+        <div class="pkg-card reveal">
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">03</span>
+            <h3>Package 03</h3>
+            <p class="pkg-card__price">80,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>01 Professional Videographer</li>
+            <li>6 Hours Coverage</li>
+            <li>Drone Coverage</li>
+            <li>Cinematic Highlight Video</li>
+            <li>Trailer (~30s)</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Outputs via Online</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--full">Book This</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEDDINGS -->
+    <div class="pkg-category" id="weddings">
+      <div class="pkg-category__header reveal">
+        <div class="pkg-category__img" style="background-image:url('images/weddings.jpg')"></div>
+        <div class="pkg-category__label">
+          <span class="section-label">Service</span>
+          <h2>Weddings</h2>
+        </div>
+      </div>
+      <div class="pkg-grid">
+        <div class="pkg-card reveal">
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">01</span>
+            <h3>Package 01</h3>
+            <p class="pkg-card__price">65,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>01 Professional Videographer</li>
+            <li>Function Highlight Coverage (~6–10 min)</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Audio Recording</li>
+            <li>Outputs via Online</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--full">Book This</a>
+        </div>
+        <div class="pkg-card pkg-card--featured reveal">
+          <div class="pkg-card__badge">Popular</div>
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">02</span>
+            <h3>Package 02</h3>
+            <p class="pkg-card__price">95,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>01 Professional Videographer</li>
+            <li>Cinematic Highlight Video (~4 min)</li>
+            <li>Trailer (~30s)</li>
+            <li>Extended Video (~30 min)</li>
+            <li>Morning Shoot Cinematic Video (~2 min)</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Audio Recording</li>
+            <li>Outputs via Pen Drive</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full">Book This</a>
+        </div>
+        <div class="pkg-card reveal">
+          <div class="pkg-card__head">
+            <span class="pkg-card__num">03</span>
+            <h3>Package 03</h3>
+            <p class="pkg-card__price">130,000 <span>LKR</span></p>
+          </div>
+          <ul class="pkg-card__list">
+            <li>02 Professional Videographers</li>
+            <li>Cinematic Highlight Video (~6–10 min)</li>
+            <li>Trailer (~30s)</li>
+            <li>Extended Video (~60 min)</li>
+            <li>Morning Shoot Cinematic Video (~2 min)</li>
+            <li>Cinematic Color Grading</li>
+            <li>Full HD</li>
+            <li>Audio Recording</li>
+            <li>Outputs via Pen Drive</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline btn--full">Book This</a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT / WHY US -->
   <section class="about" id="about">
-    <div class="about__img-col">
-      <div class="about__img" style="background-image:url('https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=900&q=80')"></div>
-      <div class="about__img about__img--offset" style="background-image:url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80')"></div>
+    <div class="about__img-wrap reveal">
+      <div class="about__img about__img--1" style="background-image:url('images/weddings.jpg')"></div>
+      <div class="about__img about__img--2" style="background-image:url('images/engagement.jpg')"></div>
     </div>
-    <div class="about__text-col">
-      <span class="section-label">About</span>
-      <h2>A Frame is Never<br>Just a Frame</h2>
-      <p>I'm a cinematographer based in Colombo, Sri Lanka — specializing in narrative-driven visuals for film, commercial, and documentary work.</p>
-      <p>Every shot is built around the story it needs to tell. Whether it's the chaos of a handheld chase or the stillness of a single-source lit portrait, I believe light and composition are the first language of cinema.</p>
-      <div class="about__stats">
-        <div class="stat">
-          <span class="stat__num">8+</span>
-          <span class="stat__label">Years Experience</span>
+    <div class="about__text reveal">
+      <span class="section-label">About AVIORA</span>
+      <h2>We Don't Just<br>Film. We Feel.</h2>
+      <p>AVIORA is a cinematic wedding and event videography studio dedicated to preserving your most precious memories through the art of storytelling.</p>
+      <p>Every frame is crafted with intention — from the quiet morning light of a bridal suite to the joy of your first dance. We blend into your day so nothing feels staged, and everything feels real.</p>
+      <div class="about__features">
+        <div class="about__feature">
+          <div class="about__feature-icon">✦</div>
+          <div>
+            <h4>Cinematic Color Grading</h4>
+            <p>Every film is color-graded to a warm, timeless look that feels as emotional as the day itself.</p>
+          </div>
         </div>
-        <div class="stat">
-          <span class="stat__num">60+</span>
-          <span class="stat__label">Projects</span>
+        <div class="about__feature">
+          <div class="about__feature-icon">✦</div>
+          <div>
+            <h4>Drone Cinematography</h4>
+            <p>Aerial perspectives that give your film an epic, sweeping scale — available in select packages.</p>
+          </div>
         </div>
-        <div class="stat">
-          <span class="stat__num">12</span>
-          <span class="stat__label">Award Wins</span>
+        <div class="about__feature">
+          <div class="about__feature-icon">✦</div>
+          <div>
+            <h4>Full HD Delivery</h4>
+            <p>All films delivered in Full HD — online or on pen drive depending on your package.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECHNIQUES -->
-  <section class="techniques">
-    <div class="section-header">
-      <span class="section-label">Craft</span>
-      <h2>How I See</h2>
-    </div>
-    <div class="techniques__list">
-      <div class="technique">
-        <span class="technique__num">01</span>
-        <h3>Natural Light</h3>
-        <p>Working with the sun, shade, and practical sources to create organic, textured frames.</p>
-      </div>
-      <div class="technique">
-        <span class="technique__num">02</span>
-        <h3>Anamorphic</h3>
-        <p>Wide aspect ratios, lens flares, and the distinctive oval bokeh of anamorphic glass.</p>
-      </div>
-      <div class="technique">
-        <span class="technique__num">03</span>
-        <h3>Color Design</h3>
-        <p>Intentional color palettes — built on set, refined in grade — that serve the story's emotional core.</p>
-      </div>
-      <div class="technique">
-        <span class="technique__num">04</span>
-        <h3>Handheld</h3>
-        <p>Visceral, intimate camera movement that puts the viewer inside the scene, not watching from outside it.</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <div class="contact__inner">
+    <div class="contact__bg" style="background-image:url('images/preshoots.jpg')"></div>
+    <div class="contact__overlay"></div>
+    <div class="contact__inner reveal">
       <span class="section-label">Get in Touch</span>
-      <h2>Let's Make<br>Something Real.</h2>
-      <p>Available for narrative, commercial, and documentary projects worldwide.</p>
-      <a href="mailto:hello@aviora.com" class="btn btn--primary">hello@aviora.com</a>
+      <h2>Ready to Book<br>Your Date?</h2>
+      <p>Dates fill up fast. Reach out to check availability and secure your day.</p>
+      <div class="contact__actions">
+        <a href="https://aviora.mypixieset.com/" target="_blank" class="btn btn--primary">Visit Our Portfolio</a>
+        <a href="mailto:hello@aviora.com" class="btn btn--outline">hello@aviora.com</a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__logo">AVIORA</div>
-    <p class="footer__copy">© 2024 Aviora. All rights reserved.</p>
+    <p class="footer__copy">© 2026 AVIORA. Price Guide 2026/27. All rights reserved.</p>
     <div class="footer__socials">
-      <a href="#" aria-label="Instagram">IG</a>
-      <a href="#" aria-label="Vimeo">VM</a>
-      <a href="#" aria-label="LinkedIn">LI</a>
+      <a href="https://aviora.mypixieset.com/" target="_blank">Portfolio</a>
+      <a href="mailto:hello@aviora.com">Email</a>
     </div>
   </footer>
 

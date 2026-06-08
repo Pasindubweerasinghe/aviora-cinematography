@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AVIORA — Cinematography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">AVIORA</div>
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reel">Showreel</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__menu" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__grain"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Director of Photography</p>
+      <h1 class="hero__title">Light.<br>Shadow.<br>Story.</h1>
+      <p class="hero__sub">Cinematic storytelling through the lens.</p>
+      <a href="#work" class="btn btn--outline">View Work</a>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- WORK GRID -->
+  <section class="work" id="work">
+    <div class="section-header">
+      <span class="section-label">Selected Work</span>
+      <h2>Behind the Frame</h2>
+    </div>
+    <div class="work__grid">
+      <article class="work__card work__card--large" data-category="Commercial">
+        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=1200&q=80')"></div>
+        <div class="work__card-info">
+          <span class="work__card-cat">Commercial</span>
+          <h3>The Silent Hour</h3>
+          <p>30s brand film — natural light, single take</p>
+        </div>
+      </article>
+      <article class="work__card" data-category="Short Film">
+        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80')"></div>
+        <div class="work__card-info">
+          <span class="work__card-cat">Short Film</span>
+          <h3>Beneath Ash</h3>
+          <p>Award-winning short, 2024</p>
+        </div>
+      </article>
+      <article class="work__card" data-category="Music Video">
+        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80')"></div>
+        <div class="work__card-info">
+          <span class="work__card-cat">Music Video</span>
+          <h3>Neon Veins</h3>
+          <p>High contrast neon, handheld</p>
+        </div>
+      </article>
+      <article class="work__card work__card--wide" data-category="Documentary">
+        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&q=80')"></div>
+        <div class="work__card-info">
+          <span class="work__card-cat">Documentary</span>
+          <h3>Frames of the Forgotten</h3>
+          <p>Feature documentary — 6 countries, 90 days</p>
+        </div>
+      </article>
+      <article class="work__card" data-category="Commercial">
+        <div class="work__card-img" style="background-image:url('https://images.unsplash.com/photo-1518929458119-e5bf444c30f4?w=800&q=80')"></div>
+        <div class="work__card-info">
+          <span class="work__card-cat">Commercial</span>
+          <h3>Dusk Protocol</h3>
+          <p>Anamorphic lenses, golden hour</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SHOWREEL -->
+  <section class="reel" id="reel">
+    <div class="reel__bg"></div>
+    <div class="reel__content">
+      <span class="section-label">2024 Showreel</span>
+      <h2>Two Minutes.<br>Every Frame Counts.</h2>
+      <button class="reel__play" id="reelPlay" aria-label="Play showreel">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5"/>
+          <path d="M24 20L42 30L24 40V20Z" fill="white"/>
+        </svg>
+        <span>Play Reel</span>
+      </button>
+    </div>
+    <!-- Lightbox -->
+    <div class="reel__lightbox" id="reelLightbox">
+      <button class="reel__close" id="reelClose" aria-label="Close">✕</button>
+      <iframe
+        id="reelFrame"
+        src=""
+        data-src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+        title="Showreel">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__img-col">
+      <div class="about__img" style="background-image:url('https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=900&q=80')"></div>
+      <div class="about__img about__img--offset" style="background-image:url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80')"></div>
+    </div>
+    <div class="about__text-col">
+      <span class="section-label">About</span>
+      <h2>A Frame is Never<br>Just a Frame</h2>
+      <p>I'm a cinematographer based in Colombo, Sri Lanka — specializing in narrative-driven visuals for film, commercial, and documentary work.</p>
+      <p>Every shot is built around the story it needs to tell. Whether it's the chaos of a handheld chase or the stillness of a single-source lit portrait, I believe light and composition are the first language of cinema.</p>
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__num">8+</span>
+          <span class="stat__label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">60+</span>
+          <span class="stat__label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">12</span>
+          <span class="stat__label">Award Wins</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNIQUES -->
+  <section class="techniques">
+    <div class="section-header">
+      <span class="section-label">Craft</span>
+      <h2>How I See</h2>
+    </div>
+    <div class="techniques__list">
+      <div class="technique">
+        <span class="technique__num">01</span>
+        <h3>Natural Light</h3>
+        <p>Working with the sun, shade, and practical sources to create organic, textured frames.</p>
+      </div>
+      <div class="technique">
+        <span class="technique__num">02</span>
+        <h3>Anamorphic</h3>
+        <p>Wide aspect ratios, lens flares, and the distinctive oval bokeh of anamorphic glass.</p>
+      </div>
+      <div class="technique">
+        <span class="technique__num">03</span>
+        <h3>Color Design</h3>
+        <p>Intentional color palettes — built on set, refined in grade — that serve the story's emotional core.</p>
+      </div>
+      <div class="technique">
+        <span class="technique__num">04</span>
+        <h3>Handheld</h3>
+        <p>Visceral, intimate camera movement that puts the viewer inside the scene, not watching from outside it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <span class="section-label">Get in Touch</span>
+      <h2>Let's Make<br>Something Real.</h2>
+      <p>Available for narrative, commercial, and documentary projects worldwide.</p>
+      <a href="mailto:hello@aviora.com" class="btn btn--primary">hello@aviora.com</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__logo">AVIORA</div>
+    <p class="footer__copy">© 2024 Aviora. All rights reserved.</p>
+    <div class="footer__socials">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="Vimeo">VM</a>
+      <a href="#" aria-label="LinkedIn">LI</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

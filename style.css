@@ -316,6 +316,32 @@ p  { color: var(--light); font-size: 0.92rem; max-width: 52ch; line-height: 1.75
 .footer__socials a { font-size: 0.65rem; letter-spacing: 0.15em; color: var(--muted); transition: color 0.2s; }
 .footer__socials a:hover { color: var(--white); }
 
+/* ─── SOCIAL SIDEBAR ───────────────────────────────────────────────── */
+.social-bar {
+  position: fixed; right: clamp(1rem, 2.5vw, 2rem); top: 50%; transform: translateY(-50%);
+  z-index: 90; display: flex; flex-direction: column; gap: 1.1rem;
+}
+.social-bar a {
+  display: flex; align-items: center; gap: 0.6rem; color: var(--white);
+  background: rgba(240,237,232,0.06); border: 1px solid rgba(240,237,232,0.15);
+  border-radius: 999px; padding: 0.55rem 0.6rem; overflow: hidden;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+.social-bar a span {
+  font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
+  max-width: 0; opacity: 0; white-space: nowrap; overflow: hidden;
+  transition: max-width 0.3s ease, opacity 0.2s ease;
+}
+.social-bar a:hover {
+  color: var(--black); background: var(--accent); border-color: var(--accent);
+}
+.social-bar a:hover span { max-width: 6rem; opacity: 1; padding-right: 0.2rem; }
+
+@media (max-width: 720px) {
+  .social-bar { flex-direction: row; right: auto; top: auto; bottom: 1rem; left: 50%; transform: translateX(-50%); }
+  .social-bar a:hover span { max-width: 5rem; }
+}
+
 /* ─── SCROLL REVEAL ────────────────────────────────────────────────── */
 .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.85s var(--ease), transform 0.85s var(--ease); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
